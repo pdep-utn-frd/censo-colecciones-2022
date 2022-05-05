@@ -1,5 +1,5 @@
 object tito {
-	const edad = 10
+	var edad = 10
 	const nombre = "Timoteo"
 	
 	method nombre() = nombre
@@ -14,12 +14,19 @@ object tito {
 	method seConsideraNinio() {
 		return edad < 15
 	}
+	
+	method hacerCenso() {
+		edad = edad + 1
+	}
 }
 
 object dani {
 	const nombre = "Daniel"
 	var edad = 77
 	
+	method hacerCenso() {
+		
+	}
 	method nombre() = nombre
 	method edad() = edad
 	method esElegante() = true
@@ -37,5 +44,9 @@ object ana {
 	
 	method seConsideraNinio() {
 		return false
+	}
+	
+	method hacerCenso() {
+		nombre = "Florencia"
 	}
 }

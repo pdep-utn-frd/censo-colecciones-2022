@@ -2,6 +2,7 @@ import personas.*
 
 object barrioDelta {
 	const habitantes = [ana, tito, dani]
+	const censados = []
 	
 	method habitantes() {
 		return habitantes
@@ -40,6 +41,13 @@ object barrioDelta {
 	}
 	
 	
-	// 
+	// Punto 6
+	// censarHabitantes
+	method censarHabitantes() {
+		habitantes.forEach({hab => 
+			hab.hacerCenso()
+			censados.add(hab)
+		})
+	}
 	
 }
