@@ -8,7 +8,11 @@ object tito {
 	}
 	
 	method esElegante() {
-		return edad > 123
+		return edad > 1
+	}
+	
+	method seConsideraNinio() {
+		return edad < 15
 	}
 }
 
@@ -19,13 +23,19 @@ object dani {
 	method nombre() = nombre
 	method edad() = edad
 	method esElegante() = true
+	method seConsideraNinio() = true
 }
 
 object ana {
 	var nombre = "Ana"
 	const edad = 33
-	
+	method nombre() = nombre
+	method edad() = edad
 	method esElegante() {
 		return nombre == nombre.reverse()
+	}
+	
+	method seConsideraNinio() {
+		return false
 	}
 }
