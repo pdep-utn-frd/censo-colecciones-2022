@@ -8,7 +8,7 @@ object tito {
 	}
 	
 	method esElegante() {
-		return edad > 11
+		return edad > 123
 	}
 }
 
